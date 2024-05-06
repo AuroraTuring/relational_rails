@@ -1,0 +1,7 @@
+<% @competitions.each do |comp| %>
+  <p>Name: <%= comp.name %>
+  <br>Location: <%= comp.location %>
+  <br>Date: <%= comp.date %>
+  <br>Open to the public?: <%= comp.open_to_the_public %>
+  <br>Prize Money: <%= comp.prize_money %></p>
+<% end %>
