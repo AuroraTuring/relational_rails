@@ -23,4 +23,4 @@ Things you may want to cover:
 
 * ...
 
-<img src="images/myimage.jpg">
+![Schema](<Relational Rails Schema.png>)

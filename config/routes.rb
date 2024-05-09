@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get "/competitions", to: "competitions#index"
   get "/competitions/:id", to: "competitions#show"
 
-  get "/competitions/:id/gerbils", to: "competition_gerbils#index"
+  get "/competitions/:id/gerbils", to: "competitions/gerbils#index"
 
   get "/gerbils", to: "gerbils#index"
   get "/gerbils/:id", to: "gerbils#show"
