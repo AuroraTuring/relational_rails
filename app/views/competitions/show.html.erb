@@ -1,3 +1,4 @@
-<%= @competition.name %>
-<br><%= @competition.location %>
-<br><%= @competition.date %>
+<p>Name: <%= @competition.name %>
+<br>Location: <%= @competition.location %>
+<br>Date: <%= @competition.date %>
+<br>Participants: <%= pluralize(@competition.gerbils.count, "gerbil") %>.</p>
