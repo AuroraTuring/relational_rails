@@ -12,3 +12,4 @@ south_east = Competition.create!(name: "South East Show", location: "Florida", d
 
 crystal = Gerbil.create!(competition_id: new_england.id, name: "Crystal", color: "Mottled Lilac", age: 2.5, neutered: false)
 jasper = Gerbil.create!(competition_id: new_england.id, name: "Jasper", color: "Polar Fox", age: 3, neutered: false)
+onyx = Gerbil.create!(competition_id: south_east.id, name: "Onyx", color: "Black", age: 1, neutered: true)
