@@ -34,7 +34,7 @@ RSpec.describe "gerbils index page", type: :feature do
       it "then I see a link at the top of the page that takes me to the Child Index" do
         visit "/gerbils"
 
-        expect(page). to have_link()
+        expect(page).to have_link()
       end
     end
   end
