@@ -25,4 +25,17 @@ RSpec.describe "gerbils index page", type: :feature do
       end
     end
   end
+
+  # As a visitor
+  # When I visit any page on the site
+  # Then I see a link at the top of the page that takes me to the Child Index
+  describe "as a visitor" do
+    describe "when I visit any page on the site" do
+      it "then I see a link at the top of the page that takes me to the Child Index" do
+        visit "/gerbils"
+
+        expect(page). to have_link()
+      end
+    end
+  end
 end
