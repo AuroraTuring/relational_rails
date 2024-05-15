@@ -30,9 +30,10 @@ RSpec.describe "competitions index page", type: :feature do
 
         visit "/competitions"
 
+        # Use the Orderly gem for these
         ne_index = page.body.index(new_england.name)
         se_index = page.body.index(south_east.name)
-
+        require 'pry'; binding.pry
         expect(ne_index).to be < se_index
       end
 

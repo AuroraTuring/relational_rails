@@ -1,5 +1,6 @@
 class Competitions::GerbilsController < ApplicationController
   def index
-    @competition_gerbils = Competition.find(params[:id]).gerbils
+    @comp = Competition.find(params[:id])
+
   end
 end

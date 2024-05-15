@@ -32,9 +32,14 @@ RSpec.describe "gerbils index page", type: :feature do
   describe "as a visitor" do
     describe "when I visit any page on the site" do
       it "then I see a link at the top of the page that takes me to the Child Index" do
-        visit "/gerbils"
+        visit "/competitions"
 
-        expect(page).to have_link()
+        expect(page).to have_link("Click Me For Gerbil Index")
+        click_link "Click Me For Gerbil Index"
+        # visit "/gerbils"
+        expect(current_path).to eq("/gerbils")
+        # Make sure the link includes the id possibly?
+        # Does it take no id?
       end
     end
   end
